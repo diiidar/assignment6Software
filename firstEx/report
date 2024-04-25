@@ -1,0 +1,17 @@
+This implementation follows the facade design pattern by providing a simplified interface
+to access the complex subsystems (BookInventorySystem and UserManagementSystem).
+The facade (LibraryFacade) hides the details of these subsystems and provides methods for
+common operations like adding books, searching for books, borrowing books, and returning books.
+
+The Book class represents a book entity with attributes like title, author, and availability status.
+The BookInventorySystem manages the collection of books, providing methods for adding books,
+searching for books, borrowing books, and returning books. The UserManagementSystem manages library users.
+
+The LibraryFacade class acts as a facade for both subsystems, providing a single interface for
+interacting with the library management system. Users can perform operations like adding books,
+searching for books, borrowing books, and returning books using the facade without worrying about
+the underlying complexities of the subsystems.
+
+The test class (LibraryManagementSystemTest) demonstrates how to use the facade to perform various
+operations like adding books, searching for books, borrowing books, and returning books. It verifies
+the functionality of the facade by checking the results of these operations.
